@@ -118,7 +118,7 @@ public class Train implements Runnable {
 				avancer();
 				Thread.sleep(10);
 			}
-			System.out.println("terminé");
+			System.out.println("Terminé!");
 		} catch (Exception e) {}
 		
 	}

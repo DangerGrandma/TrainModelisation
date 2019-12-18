@@ -55,23 +55,23 @@ public class Case {
 		try {
 			
 		if(this == Gare1) {
-			System.out.println(t.nom + " demander d'entrer la Gare1 au temps " + (int)Chrono.temps);
+			System.out.println(t.nom + " demande d'entrer dans la Gare-1 au temps " + (int)Chrono.temps);
 			Gare1.sema.acquire();
-			System.out.println(t.nom + " entre la Gare1 au temps " + (int)Chrono.temps);
+			System.out.println(t.nom + " entre dans la Gare-1 au temps " + (int)Chrono.temps);
 			Train.input++;
 			Thread.sleep(1000);
 		}
 		else if(this == Gare2) {
-			System.out.println(t.nom + " demander d'entrer la Gare2 au temps " + (int)Chrono.temps);
+			System.out.println(t.nom + " demande d'entrer dans la Gare-2 au temps " + (int)Chrono.temps);
 			Gare2.sema.acquire();
-			System.out.println(t.nom + " entre la Gare2 au temps " + (int)Chrono.temps);	
+			System.out.println(t.nom + " entre dans la Gare-2 au temps " + (int)Chrono.temps);	
 			Train.input++;
 			Thread.sleep(1000);
 		}
 		else if(this == Gare3) {
-			System.out.println(t.nom + " demander d'entrer la Gare3 au temps " + (int)Chrono.temps);
+			System.out.println(t.nom + " demande d'entrer dans la Gare-3 au temps " + (int)Chrono.temps);
 			Gare3.sema.acquire();
-			System.out.println(t.nom + " entre la Gare3 au temps " + (int)Chrono.temps);
+			System.out.println(t.nom + " entre dans la Gare-3 au temps " + (int)Chrono.temps);
 			Train.input++;
 			Thread.sleep(1000);
 			
@@ -108,13 +108,13 @@ public class Case {
 		this.trainNum = null;
 		
 		if(this == Gare1) {
-			System.out.println(t.nom + " quitte la Gare1 au temps  " + (int)Chrono.temps);		
+			System.out.println(t.nom + " quitte la Gare-1 au temps  " + (int)Chrono.temps);		
 		}
 		else if(this == Gare2) {
-			System.out.println(t.nom + " quitte la Gare2 au temps  " + (int)Chrono.temps);		
+			System.out.println(t.nom + " quitte la Gare-2 au temps  " + (int)Chrono.temps);		
 		}
 		else if(this == Gare3) {
-			System.out.println(t.nom + " quitte la Gare3 au temps  " + (int)Chrono.temps);		
+			System.out.println(t.nom + " quitte la Gare-3 au temps  " + (int)Chrono.temps);		
 		}
 		
 		sema.release();
